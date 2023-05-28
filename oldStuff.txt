@@ -1,0 +1,23 @@
+<p className="fw-bold"> Software skills:</p>
+            <ul className="ul-no-bullets">
+              <li>
+                Adobe InDesign
+                <ProgressBar striped variant="success" now={80} />
+              </li>
+              <li>
+                Adobe Illustrator
+                <ProgressBar striped variant="success" now={80} />
+              </li>
+              <li>
+                Adobe XD
+                <ProgressBar striped variant="success" now={65} />
+              </li>
+              <li>
+                Adobe Photoshop
+                <ProgressBar striped variant="success" now={50} />
+              </li>
+              <li>
+                Adobe After Effects
+                <ProgressBar striped variant="success" now={45} />
+              </li>
+            </ul>

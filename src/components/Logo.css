@@ -1,0 +1,24 @@
+#logo-image {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 20%;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  float: left;
+}
+.logo-container {
+  align-items: flex-end;
+}
+figcaption {
+  font-weight: bold;
+  font-size: medium;
+  color: rgb(0, 0, 0);
+}
+figure {
+  width: 50%;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}

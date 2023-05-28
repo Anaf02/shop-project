@@ -1,0 +1,76 @@
+#profile-image {
+  aspect-ratio: 0.75;
+  width: 20%;
+  margin: 10px;
+  border-radius: 10%;
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+li {
+  margin: 10px;
+}
+.ul-no-bullets {
+  list-style-type: none;
+}
+.progress {
+  width: 30%;
+  height: 1vh;
+}
+.margin-top {
+  margin-top: 120px;
+}
+.inline-image {
+  display: flex;
+  align-items: center;
+}
+.margin {
+  margin-left: 5%;
+}
+.shadow {
+  box-shadow: 0px 4px 10px rgb(97, 97, 97);
+}
+
+.skill-bx {
+  background: aliceblue;
+  border-radius: 40px;
+  text-align: center;
+  padding: 10px 20px;
+}
+.caption {
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
+.skill-carousel {
+  max-width: 550px;
+  margin: 0px auto 0px 20%;
+}
+
+.skill-carousel img {
+  max-height: 200px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  #profile-image {
+    width: 35%;
+  }
+  .caption {
+    font-size: 12px;
+  }
+  .skill-carousel {
+    margin: 0 auto;
+  }
+  .skill-bx {
+    padding: 1px, 2px;
+  }
+  .text-align-equal {
+    text-align: left;
+  }
+}
+.timeline-content {
+  width: auto;
+  padding: 15px;
+}
