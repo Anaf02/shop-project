@@ -1,7 +1,6 @@
 import { Button } from "react-bootstrap";
 import getPass from "../firebase/getPass";
 import { useState } from "react";
-import { dividerClasses } from "@mui/material";
 
 interface Props {
   setLoggedIn: (newState: boolean) => void;

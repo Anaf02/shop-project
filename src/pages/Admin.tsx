@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import handleAddProduct from "../firebase/handleAddProduct";
 import AddProduct from "../components/AddProduct";
 import Login from "../components/Login";
 

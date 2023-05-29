@@ -52,130 +52,138 @@ function Shop() {
   getProducts().then((result) => setProductDocs(result));
   return (
     <>
-      <Row className="d-flex justify-content-center">
-        <h2 className="text-light ms-5">Catalog</h2>
-      </Row>
-      <CardGenerator cardData={cardData1} width="25rem" height="auto" />
+      <Container className="fluid m-0">
+        <Row className="d-flex justify-content-center">
+          <h2 className="text-light ms-5">
+            Any order requires previous discussion about specific design and
+            price.
+          </h2>
+          <h1 className="text-light ms-5 text-center">Categories</h1>
+        </Row>
+        <CardGenerator cardData={cardData1} width="25rem" height="auto" />
+        <div className="shadow margin-top bg-dark p-3">
+          <Row>
+            <Col>
+              <h1 className="text-light ms-5 text-center">Catalog</h1>
+              <h1 id="posters">Prints/Posters</h1>
+            </Col>
+          </Row>
 
-      <Row>
-        <Col>
-          <h1 id="posters">Prints/Posters</h1>
-        </Col>
-      </Row>
+          {productDocs !== undefined ? (
+            <CardGenerator
+              cardData={productDocs
+                ?.filter((x) => x.section === "posters")
+                .map((item) => {
+                  return {
+                    name: item.name,
+                    description: item.description,
+                    image: item.image,
+                  };
+                })}
+              width="15rem"
+              height="100%"
+            />
+          ) : (
+            ""
+          )}
 
-      {productDocs !== undefined ? (
-        <CardGenerator
-          cardData={productDocs
-            ?.filter((x) => x.section === "posters")
-            .map((item) => {
-              return {
-                name: item.name,
-                description: item.description,
-                image: item.image,
-              };
-            })}
-          width="15rem"
-          height="20rem"
-        />
-      ) : (
-        ""
-      )}
+          <Row>
+            <Col>
+              <h1 id="shirts">T-Shirts</h1>
+            </Col>
+          </Row>
 
-      <Row>
-        <Col>
-          <h1 id="shirts">T-Shirts</h1>
-        </Col>
-      </Row>
+          {productDocs !== undefined ? (
+            <CardGenerator
+              cardData={productDocs
+                ?.filter((x) => x.section === "shirts")
+                .map((item) => {
+                  return {
+                    name: item.name,
+                    description: item.description,
+                    image: item.image,
+                  };
+                })}
+              width="15rem"
+              height="100%"
+            />
+          ) : (
+            ""
+          )}
 
-      {productDocs !== undefined ? (
-        <CardGenerator
-          cardData={productDocs
-            ?.filter((x) => x.section === "shirts")
-            .map((item) => {
-              return {
-                name: item.name,
-                description: item.description,
-                image: item.image,
-              };
-            })}
-          width="15rem"
-          height="20rem"
-        />
-      ) : (
-        ""
-      )}
+          <Row>
+            <Col>
+              <h1 id="books">Notebooks/ Sketchbooks</h1>
+            </Col>
+          </Row>
 
-      <Row>
-        <Col>
-          <h1 id="books">Notebooks/ Sketchbooks</h1>
-        </Col>
-      </Row>
+          {productDocs !== undefined ? (
+            <CardGenerator
+              cardData={productDocs
+                ?.filter((x) => x.section === "books")
+                .map((item) => {
+                  return {
+                    name: item.name,
+                    description: item.description,
+                    image: item.image,
+                  };
+                })}
+              width="15rem"
+              height="100%"
+            />
+          ) : (
+            ""
+          )}
 
-      {productDocs !== undefined ? (
-        <CardGenerator
-          cardData={productDocs
-            ?.filter((x) => x.section === "books")
-            .map((item) => {
-              return {
-                name: item.name,
-                description: item.description,
-                image: item.image,
-              };
-            })}
-          width="15rem"
-          height="20rem"
-        />
-      ) : (
-        ""
-      )}
+          <Row>
+            <Col>
+              <h1 id="cards">Cards</h1>
+            </Col>
+          </Row>
 
-      <Row>
-        <Col>
-          <h1 id="cards">Cards</h1>
-        </Col>
-      </Row>
+          {productDocs !== undefined ? (
+            <CardGenerator
+              cardData={productDocs
+                ?.filter((x) => x.section === "cards")
+                .map((item) => {
+                  return {
+                    name: item.name,
+                    description: item.description,
+                    image: item.image,
+                  };
+                })}
+              width="15rem"
+              height="100%"
+            />
+          ) : (
+            ""
+          )}
 
-      {productDocs !== undefined ? (
-        <CardGenerator
-          cardData={productDocs
-            ?.filter((x) => x.section === "cards")
-            .map((item) => {
-              return {
-                name: item.name,
-                description: item.description,
-                image: item.image,
-              };
-            })}
-          width="15rem"
-          height="20rem"
-        />
-      ) : (
-        ""
-      )}
+          <Row>
+            <Col>
+              <h1 id="stationery">Stationery</h1>
+            </Col>
+          </Row>
 
-      <Row>
-        <Col>
-          <h1 id="stationery">Stationery</h1>
-        </Col>
-      </Row>
-
-      {productDocs !== undefined ? (
-        <CardGenerator
-          cardData={productDocs
-            ?.filter((x) => x.section === "stationery")
-            .map((item) => {
-              return {
-                name: item.name,
-                description: item.description,
-                image: item.image,
-              };
-            })}
-          width="15rem"
-          height="20rem"
-        />
-      ) : (
-        ""
-      )}
+          {productDocs !== undefined ? (
+            <CardGenerator
+              cardData={productDocs
+                ?.filter((x) => x.section === "stationery")
+                .map((item) => {
+                  return {
+                    name: item.name,
+                    description: item.description,
+                    image: item.image,
+                  };
+                })}
+              width="15rem"
+              height="100%"
+            />
+          ) : (
+            ""
+          )}
+        </div>
+      </Container>
     </>
   );
 }

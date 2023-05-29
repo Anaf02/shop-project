@@ -21,7 +21,7 @@ function CardGenerator({ cardData, width, height }: Props) {
       {cardData.map((card, index) => (
         <Card
           key={index}
-          className="m-3 shadow bg-body-tertiary rounded zoom-card"
+          className="m-3 shadow bg-body-tertiary rounded zoom-card d-flex justify-content-center"
           style={{ width: width, height: height }}
         >
           {card.id ? (

@@ -28,7 +28,9 @@ function Home() {
         <Col>
           <Button
             onClick={goToShop}
-            className="outline-light btn-lg text-center"
+            variant="outline-dark"
+            size="lg"
+            className="text-light text-center"
           >
             Shop now
           </Button>

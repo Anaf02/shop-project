@@ -1,0 +1,10 @@
+#envelope {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+a:hover {
+  color: white;
+}

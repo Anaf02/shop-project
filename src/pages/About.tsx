@@ -86,7 +86,7 @@ function About() {
           </Col>
         </Row>
         <Row>
-          <Col md="12" className="text-center">
+          <Col md="12" className="text-center p-1">
             <p className="fw-bold pt-2"> Education:</p>
             <Timeline position="alternate">
               <TimelineItem>
